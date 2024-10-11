@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+This module provides a function give  the sum of two  no as a float representation.
+"""
 
 def add(a: float, b: float) -> float:
     """
