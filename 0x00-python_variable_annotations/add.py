@@ -3,6 +3,7 @@
 This module provides a function give  the sum of two  no as a float representation.
 """
 
+
 def add(a: float, b: float) -> float:
     """
     Function to add two float numbers.
@@ -12,6 +13,8 @@ def add(a: float, b: float) -> float:
     :return: sum of a and b as a float
     """
     return a + b
+
+
 if __name__ == "__main__":
     print(add(1.11, 2.22) == 1.11 + 2.22)
     print(add.__annotations__)
