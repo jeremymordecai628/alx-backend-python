@@ -9,6 +9,7 @@ import asyncio
 # Dynamically import wait_random from the file '0-basic_async_syntax.py'
 wait_random = __import__('0-basic_async_syntax').wait_random
 
+
 def task_wait_random(max_delay: int) -> asyncio.Task:
     """
     Creates and returns an asyncio.Task that runs the wait_random coroutine.

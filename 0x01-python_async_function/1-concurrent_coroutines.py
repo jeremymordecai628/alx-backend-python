@@ -9,7 +9,6 @@ from typing import List
 from heapq import heappush, heappop
 
 
-
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """
     Spawns wait_random n times with the specified max_delay and returns a list
@@ -20,10 +19,10 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     :return: List of delay times in ascending order
     """
     delays = []
-    
+
     # Create and execute all wait_random coroutines concurrently
     coroutines = [wait_random(max_delay) for _ in range(n)]
-    
+
     # Use asyncio.as_completed to get results as they finish
     for result in asyncio.as_completed(coroutines):
         delay = await result
